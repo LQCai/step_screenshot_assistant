@@ -1,0 +1,188 @@
+.container {
+    text-align: center;
+    min-width: 180px;
+    max-width: 100%;
+    padding: 10px
+}
+
+.error-container {
+    padding: 20px;
+    color: #d32f2f
+}
+
+.error-container h2 {
+    color: #d32f2f;
+    margin-bottom: 10px
+}
+
+.error-container p {
+    color: #666;
+    font-size: 14px
+}
+
+.container.side-panel {
+    text-align: center
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px
+}
+
+.container.side-panel .header {
+    margin-bottom: 30px
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain
+}
+
+.container.side-panel .logo {
+    width: 40px;
+    height: 40px
+}
+
+.container.side-panel h2 {
+    margin-bottom: 0;
+    font-size: 24px
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px
+}
+
+.container.side-panel button {
+    max-width: 300px;
+    padding: 12px 24px;
+    font-size: 16px
+}
+
+.container.side-panel .status {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6
+}
+
+.container.side-panel .copyright {
+    margin-top: 40px;
+    padding-top: 25px
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color .2s
+}
+
+button:hover {
+    background-color: #45a049
+}
+
+button.active {
+    background-color: #f44336
+}
+
+button.active:hover {
+    background-color: #da190b
+}
+
+.status {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.version {
+    color: #999;
+    font-size: 12px;
+    font-weight: 500
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity .2s;
+    position: relative
+}
+
+.icon-link:hover {
+    opacity: .9
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain
+}
+
+.qr-container {
+    cursor: pointer
+}
+
+.qr-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-70%);
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+    z-index: 1000;
+    pointer-events: none
+}
+
+.qr-container:hover .qr-tooltip {
+    opacity: 1;
+    visibility: visible
+}
+
+.qr-image {
+    width: 200px;
+    display: block;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 4px 12px #00000026
+}
+
+.qr-tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .1))
+}
