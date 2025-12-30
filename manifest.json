@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "步骤截图助手",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "自动根据鼠标点击生成步骤截图",
   "permissions": [
     "activeTab",

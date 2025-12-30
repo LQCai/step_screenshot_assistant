@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Capture - Side Panel</title>
     <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* 防止sidepanel出现滚动条 */
+      }
       body { 
         min-width: 200px;
-        padding: 20px; 
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        margin: 0;
+      }
+      #app {
+        width: 100%;
+        height: 100%;
       }
     </style>
     <script type="module" crossorigin src="/main.js"></script>
